@@ -1,0 +1,103 @@
+\hypertarget{namespaceutil}{}\doxysection{util Namespace Reference}
+\label{namespaceutil}\index{util@{util}}
+
+
+l\textquotesingle{}espace de nom util regroupant les déclarations de fonctions spécifiques au développement de validation Format.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceutil_a5b440bef0fdc68c9feeb993a4c1c8750}\label{namespaceutil_a5b440bef0fdc68c9feeb993a4c1c8750}} 
+bool {\bfseries valide\+Ligne\+C\+VS} (const std\+::string \&p\+\_\+ligne, std\+::ostringstream \&p\+\_\+parametres)
+\item 
+bool \mbox{\hyperlink{namespaceutil_aa1f835db4a5d592ba345068efa40d75b}{valider\+Geom}} (const std\+::string \&p\+\_\+geom)
+\begin{DoxyCompactList}\small\item\em valider la longitude et la latitude borne de stationnement. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceutil_a163655dfa65cca68106dec75c3e54b21}{valide\+Stationnement\+G\+E\+O\+J\+S\+ON}} (const std\+::string \&p\+\_\+enregistrement, std\+::ostringstream \&p\+\_\+attributs)
+\item 
+double \mbox{\hyperlink{namespaceutil_ad7401105b90b0e41c79b5605849630f1}{convertir\+Chaine\+En\+Double}} (const std\+::string \&p\+\_\+chaine)
+\begin{DoxyCompactList}\small\item\em Méthode qui permet de convertir une chaîne de caractères de la forme 123,456 en double. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceutil_aa748a66ef94286dd5d698a452fb7de2e}{valider\+Point\+Cardinal}} (const std\+::string \&p\+\_\+cardinalite)
+\begin{DoxyCompactList}\small\item\em fonction validant le format d\textquotesingle{}un point cardinal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceutil_a5ae66eda55f284e4afab0fdc91786f7d}\label{namespaceutil_a5ae66eda55f284e4afab0fdc91786f7d}} 
+bool {\bfseries arrondissement\+Est\+Valide} (const std\+::string \&p\+\_\+ville, const std\+::string \&p\+\_\+arrondissement)
+\item 
+\mbox{\Hypertarget{namespaceutil_a71ac610bf849635358e7f1bdd99b4343}\label{namespaceutil_a71ac610bf849635358e7f1bdd99b4343}} 
+bool {\bfseries valide\+Stationemement\+G\+E\+O\+J\+S\+ON} (const std\+::string \&p\+\_\+enregistrement, std\+::ostringstream \&p\+\_\+attributs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+l\textquotesingle{}espace de nom util regroupant les déclarations de fonctions spécifiques au développement de validation Format. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceutil_ad7401105b90b0e41c79b5605849630f1}\label{namespaceutil_ad7401105b90b0e41c79b5605849630f1}} 
+\index{util@{util}!convertirChaineEnDouble@{convertirChaineEnDouble}}
+\index{convertirChaineEnDouble@{convertirChaineEnDouble}!util@{util}}
+\doxysubsubsection{\texorpdfstring{convertirChaineEnDouble()}{convertirChaineEnDouble()}}
+{\footnotesize\ttfamily double util\+::convertir\+Chaine\+En\+Double (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+chaine }\end{DoxyParamCaption})}
+
+
+
+Méthode qui permet de convertir une chaîne de caractères de la forme 123,456 en double. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+chaine} & la chaîne de caractères à convertir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un double résultat de la conversion. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceutil_aa1f835db4a5d592ba345068efa40d75b}\label{namespaceutil_aa1f835db4a5d592ba345068efa40d75b}} 
+\index{util@{util}!validerGeom@{validerGeom}}
+\index{validerGeom@{validerGeom}!util@{util}}
+\doxysubsubsection{\texorpdfstring{validerGeom()}{validerGeom()}}
+{\footnotesize\ttfamily bool util\+::valider\+Geom (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+geom }\end{DoxyParamCaption})}
+
+
+
+valider la longitude et la latitude borne de stationnement. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chaine} & de caractère à convertir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceutil_aa748a66ef94286dd5d698a452fb7de2e}\label{namespaceutil_aa748a66ef94286dd5d698a452fb7de2e}} 
+\index{util@{util}!validerPointCardinal@{validerPointCardinal}}
+\index{validerPointCardinal@{validerPointCardinal}!util@{util}}
+\doxysubsubsection{\texorpdfstring{validerPointCardinal()}{validerPointCardinal()}}
+{\footnotesize\ttfamily bool util\+::valider\+Point\+Cardinal (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+cardinalite }\end{DoxyParamCaption})}
+
+
+
+fonction validant le format d\textquotesingle{}un point cardinal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+cardinalité} & regroupe les valeurs possible d\textquotesingle{}un point cardinal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un string correspondant à la cardinalité (Nord, Sud, Est, Ouest, null , chaine vide) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceutil_a163655dfa65cca68106dec75c3e54b21}\label{namespaceutil_a163655dfa65cca68106dec75c3e54b21}} 
+\index{util@{util}!valideStationnementGEOJSON@{valideStationnementGEOJSON}}
+\index{valideStationnementGEOJSON@{valideStationnementGEOJSON}!util@{util}}
+\doxysubsubsection{\texorpdfstring{valideStationnementGEOJSON()}{valideStationnementGEOJSON()}}
+{\footnotesize\ttfamily bool util\+::valide\+Stationnement\+G\+E\+O\+J\+S\+ON (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+enregistrement,  }\item[{std\+::ostringstream \&}]{p\+\_\+attributs }\end{DoxyParamCaption})}
+
+\textbackslash{}briel extraire informations bornes de stationnements 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+enregistrement} & chaine de caractere extrait \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+attribut} & stockage informations extraites. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen. 
+\end{DoxyReturn}

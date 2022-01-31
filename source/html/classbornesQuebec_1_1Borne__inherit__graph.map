@@ -1,0 +1,6 @@
+<map id="bornesQuebec::Borne" name="bornesQuebec::Borne">
+<area shape="rect" id="node1" title="La classe Borne, permettant la modélisation de tous les types de bornes présents dans la ville de Qué..." alt="" coords="162,5,323,32"/>
+<area shape="rect" id="node2" href="$classBorneDeTest.html" title=" " alt="" coords="5,80,109,107"/>
+<area shape="rect" id="node3" href="$classbornesQuebec_1_1BorneFontaine.html" title=" " alt="" coords="134,80,351,107"/>
+<area shape="rect" id="node4" href="$classbornesQuebec_1_1BorneStationnement.html" title="classe dérivée de la classe Borne, elle représente les bornes de stationnement et de payement de la v..." alt="" coords="375,80,633,107"/>
+</map>

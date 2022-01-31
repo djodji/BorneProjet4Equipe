@@ -1,0 +1,207 @@
+\hypertarget{classbornesQuebec_1_1Borne}{}\doxysection{bornes\+Quebec\+::Borne Class Reference}
+\label{classbornesQuebec_1_1Borne}\index{bornesQuebec::Borne@{bornesQuebec::Borne}}
+
+
+La classe \mbox{\hyperlink{classbornesQuebec_1_1Borne}{Borne}}, permettant la modélisation de tous les types de bornes présents dans la ville de Québec. \textbackslash{} parametre\mbox{[}in\mbox{]} un identifiants de la borne, un entier strictement positif \textbackslash{} paramtre \mbox{[}in\mbox{]} un objet string, désigne le coté du centre de chaussée ou l\textquotesingle{}intersection d\textquotesingle{}un terre-\/plein \textbackslash{} parametre\mbox{[}in\mbox{]} le nom topographique du centre de chaussée. non vide \textbackslash{} parametre \mbox{[}in\mbox{]} longitude te latitude, deux nombre réelles.  
+
+
+
+
+{\ttfamily \#include $<$Borne.\+h$>$}
+
+
+
+Inheritance diagram for bornes\+Quebec\+::Borne\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbornesQuebec_1_1Borne__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbornesQuebec_1_1Borne_a8bbe530c180d7266b7c8b5a8be0062ef}{Borne}} (int p\+\_\+identifiant, const std\+::string \&p\+\_\+direction, const std\+::string \&p\+\_\+nom\+Topographique, float p\+\_\+longitude, float p\+\_\+latitude)
+\begin{DoxyCompactList}\small\item\em Le constructeur avec paramrètre de la classe. Il construit un objet \mbox{\hyperlink{classbornesQuebec_1_1Borne}{Borne}} à partire des données passées en paramètre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classbornesQuebec_1_1Borne_ae3eada059e993934a045bafcf8703d4a}\label{classbornesQuebec_1_1Borne_ae3eada059e993934a045bafcf8703d4a}} 
+virtual \mbox{\hyperlink{classbornesQuebec_1_1Borne}{Borne}} $\ast$ {\bfseries clone} () const =0
+\item 
+int \mbox{\hyperlink{classbornesQuebec_1_1Borne_a13f6da8b5005fdb2c6a07ff6865a1c91}{req\+Identifiant}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour numero de borne. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classbornesQuebec_1_1Borne_afc6e63b9d199d4d532bbe08e49a0e922}{req\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur verifie le centre de chaussée ou l\textquotesingle{}intersection dans le cas d\textquotesingle{}un terre-\/plein. il est la vidé par la fonction \mbox{\hyperlink{namespaceutil_aa748a66ef94286dd5d698a452fb7de2e}{util\+::valider\+Point\+Cardinal}}. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classbornesQuebec_1_1Borne_ac9c7e62084c979208962d297181d82c9}{req\+Nom\+Topographique}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la lecture Métrique. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classbornesQuebec_1_1Borne_af0f137cc5e33ace3e0d97e0ce754c292}{req\+Longitude}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le segment Rue. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classbornesQuebec_1_1Borne_a13a1ed94449bcc8d870821dc0da3bcfe}{req\+Latitude}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour la direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbornesQuebec_1_1Borne_ac2a5921448485b388c3b086d490e4082}{asg\+Nom\+Topographie}} (const std\+::string \&p\+\_\+nom\+Topographique)
+\begin{DoxyCompactList}\small\item\em Mutateur pour nom Topographique, modifie m\+\_\+nom\+Topographie. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classbornesQuebec_1_1Borne_ab30cc55b4eaa0dc71ca3c9d23e7493b7}{req\+Borne\+Formate}} () const =0
+\begin{DoxyCompactList}\small\item\em Méthode retournant une chaine de caractère qui contient les informations correspondant à une borne. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbornesQuebec_1_1Borne_a9a71e892260a9a039ee4aadbc73b403e}{operator==}} (const \mbox{\hyperlink{classbornesQuebec_1_1Borne}{Borne}} \&p\+\_\+\+Borne) const
+\begin{DoxyCompactList}\small\item\em Méthode de comparaison d\textquotesingle{}égalité sur tous les attributs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La classe \mbox{\hyperlink{classbornesQuebec_1_1Borne}{Borne}}, permettant la modélisation de tous les types de bornes présents dans la ville de Québec. \textbackslash{} parametre\mbox{[}in\mbox{]} un identifiants de la borne, un entier strictement positif \textbackslash{} paramtre \mbox{[}in\mbox{]} un objet string, désigne le coté du centre de chaussée ou l\textquotesingle{}intersection d\textquotesingle{}un terre-\/plein \textbackslash{} parametre\mbox{[}in\mbox{]} le nom topographique du centre de chaussée. non vide \textbackslash{} parametre \mbox{[}in\mbox{]} longitude te latitude, deux nombre réelles. 
+
+La classe \mbox{\hyperlink{classbornesQuebec_1_1Borne}{Borne}} Fontaine, permettant la modélisation de tous les types de bornes-\/fontaines de la ville de Québec. \textbackslash{} parametre\mbox{[}in\mbox{]} ville\+: un objet string qui représente la ville \textbackslash{} paramtre \mbox{[}in\mbox{]} arrondissement\+: un objet string, qui désigne l\textquotesingle{}arrondissement.
+
+
+\begin{DoxyItemize}
+\item \textbackslash{}
+\end{DoxyItemize}
+
+dérive de la claase \mbox{\hyperlink{classbornesQuebec_1_1Borne}{Borne}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbornesQuebec_1_1Borne_a8bbe530c180d7266b7c8b5a8be0062ef}\label{classbornesQuebec_1_1Borne_a8bbe530c180d7266b7c8b5a8be0062ef}} 
+\index{bornesQuebec::Borne@{bornesQuebec::Borne}!Borne@{Borne}}
+\index{Borne@{Borne}!bornesQuebec::Borne@{bornesQuebec::Borne}}
+\doxysubsubsection{\texorpdfstring{Borne()}{Borne()}}
+{\footnotesize\ttfamily bornes\+Quebec\+::\+Borne\+::\+Borne (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+identifiant,  }\item[{const std\+::string \&}]{p\+\_\+direction,  }\item[{const std\+::string \&}]{p\+\_\+nom\+Topographique,  }\item[{float}]{p\+\_\+longitude,  }\item[{float}]{p\+\_\+latitude }\end{DoxyParamCaption})}
+
+
+
+Le constructeur avec paramrètre de la classe. Il construit un objet \mbox{\hyperlink{classbornesQuebec_1_1Borne}{Borne}} à partire des données passées en paramètre. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+num\+Borne} & le numéro de borne \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+cote\+Rue} & le coté par rapport au centre de chaussée où est la borne. il correcpond à un point cardinal. \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+lecture\+Metrique} & la distance mésurée à partir du début du tronçon dans le sens des numéros d\textquotesingle{}immeuble \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+sepment\+Rue} & l\textquotesingle{}identifiant du segment de voie publique \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+direction} & le côté du centre du chaussées ou l\textquotesingle{}intersection dans le cas d\textquotesingle{}un terre-\/plein. Il correcpond à un point cardinal \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+nom\+Topographique} & le nom topographique (générique, liaison,specifique,direction) du centre de chaussée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un objet \mbox{\hyperlink{classbornesQuebec_1_1Borne}{Borne}}. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbornesQuebec_1_1Borne_ac2a5921448485b388c3b086d490e4082}\label{classbornesQuebec_1_1Borne_ac2a5921448485b388c3b086d490e4082}} 
+\index{bornesQuebec::Borne@{bornesQuebec::Borne}!asgNomTopographie@{asgNomTopographie}}
+\index{asgNomTopographie@{asgNomTopographie}!bornesQuebec::Borne@{bornesQuebec::Borne}}
+\doxysubsubsection{\texorpdfstring{asgNomTopographie()}{asgNomTopographie()}}
+{\footnotesize\ttfamily void bornes\+Quebec\+::\+Borne\+::asg\+Nom\+Topographie (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+nom\+Topographique }\end{DoxyParamCaption})}
+
+
+
+Mutateur pour nom Topographique, modifie m\+\_\+nom\+Topographie. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+nom\+Topographique.} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbornesQuebec_1_1Borne_a9a71e892260a9a039ee4aadbc73b403e}\label{classbornesQuebec_1_1Borne_a9a71e892260a9a039ee4aadbc73b403e}} 
+\index{bornesQuebec::Borne@{bornesQuebec::Borne}!operator==@{operator==}}
+\index{operator==@{operator==}!bornesQuebec::Borne@{bornesQuebec::Borne}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool bornes\+Quebec\+::\+Borne\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbornesQuebec_1_1Borne}{Borne}} \&}]{p\+\_\+\+Borne }\end{DoxyParamCaption}) const}
+
+
+
+Méthode de comparaison d\textquotesingle{}égalité sur tous les attributs. 
+
+\begin{DoxyReturn}{Returns}
+un string qui contient l\textquotesingle{}information. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbornesQuebec_1_1Borne_ab30cc55b4eaa0dc71ca3c9d23e7493b7}\label{classbornesQuebec_1_1Borne_ab30cc55b4eaa0dc71ca3c9d23e7493b7}} 
+\index{bornesQuebec::Borne@{bornesQuebec::Borne}!reqBorneFormate@{reqBorneFormate}}
+\index{reqBorneFormate@{reqBorneFormate}!bornesQuebec::Borne@{bornesQuebec::Borne}}
+\doxysubsubsection{\texorpdfstring{reqBorneFormate()}{reqBorneFormate()}}
+{\footnotesize\ttfamily std\+::string bornes\+Quebec\+::\+Borne\+::req\+Borne\+Formate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Méthode retournant une chaine de caractère qui contient les informations correspondant à une borne. 
+
+\begin{DoxyReturn}{Returns}
+un string qui contient l\textquotesingle{}information. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classbornesQuebec_1_1BorneStationnement_a86488a7d7be3461deb97067252bfdde3}{bornes\+Quebec\+::\+Borne\+Stationnement}}, \mbox{\hyperlink{classbornesQuebec_1_1BorneFontaine_acc019f7d6eb9b0be415ff5cfcf917edf}{bornes\+Quebec\+::\+Borne\+Fontaine}}, and \mbox{\hyperlink{classBorneDeTest_a2bfd74f50711b4f3251c1202088801ce}{Borne\+De\+Test}}.
+
+\mbox{\Hypertarget{classbornesQuebec_1_1Borne_afc6e63b9d199d4d532bbe08e49a0e922}\label{classbornesQuebec_1_1Borne_afc6e63b9d199d4d532bbe08e49a0e922}} 
+\index{bornesQuebec::Borne@{bornesQuebec::Borne}!reqDirection@{reqDirection}}
+\index{reqDirection@{reqDirection}!bornesQuebec::Borne@{bornesQuebec::Borne}}
+\doxysubsubsection{\texorpdfstring{reqDirection()}{reqDirection()}}
+{\footnotesize\ttfamily const string \& bornes\+Quebec\+::\+Borne\+::req\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur verifie le centre de chaussée ou l\textquotesingle{}intersection dans le cas d\textquotesingle{}un terre-\/plein. il est la vidé par la fonction \mbox{\hyperlink{namespaceutil_aa748a66ef94286dd5d698a452fb7de2e}{util\+::valider\+Point\+Cardinal}}. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+direction. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbornesQuebec_1_1Borne_a13f6da8b5005fdb2c6a07ff6865a1c91}\label{classbornesQuebec_1_1Borne_a13f6da8b5005fdb2c6a07ff6865a1c91}} 
+\index{bornesQuebec::Borne@{bornesQuebec::Borne}!reqIdentifiant@{reqIdentifiant}}
+\index{reqIdentifiant@{reqIdentifiant}!bornesQuebec::Borne@{bornesQuebec::Borne}}
+\doxysubsubsection{\texorpdfstring{reqIdentifiant()}{reqIdentifiant()}}
+{\footnotesize\ttfamily int bornes\+Quebec\+::\+Borne\+::req\+Identifiant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour numero de borne. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+num\+Borne le numero de borne. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbornesQuebec_1_1Borne_a13a1ed94449bcc8d870821dc0da3bcfe}\label{classbornesQuebec_1_1Borne_a13a1ed94449bcc8d870821dc0da3bcfe}} 
+\index{bornesQuebec::Borne@{bornesQuebec::Borne}!reqLatitude@{reqLatitude}}
+\index{reqLatitude@{reqLatitude}!bornesQuebec::Borne@{bornesQuebec::Borne}}
+\doxysubsubsection{\texorpdfstring{reqLatitude()}{reqLatitude()}}
+{\footnotesize\ttfamily float bornes\+Quebec\+::\+Borne\+::req\+Latitude (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour la direction. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+direction le côté du centre de la chaussée de l\textquotesingle{}objet 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbornesQuebec_1_1Borne_af0f137cc5e33ace3e0d97e0ce754c292}\label{classbornesQuebec_1_1Borne_af0f137cc5e33ace3e0d97e0ce754c292}} 
+\index{bornesQuebec::Borne@{bornesQuebec::Borne}!reqLongitude@{reqLongitude}}
+\index{reqLongitude@{reqLongitude}!bornesQuebec::Borne@{bornesQuebec::Borne}}
+\doxysubsubsection{\texorpdfstring{reqLongitude()}{reqLongitude()}}
+{\footnotesize\ttfamily float bornes\+Quebec\+::\+Borne\+::req\+Longitude (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour le segment Rue. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+segment\+Rue l\textquotesingle{}identifiant de la voie 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbornesQuebec_1_1Borne_ac9c7e62084c979208962d297181d82c9}\label{classbornesQuebec_1_1Borne_ac9c7e62084c979208962d297181d82c9}} 
+\index{bornesQuebec::Borne@{bornesQuebec::Borne}!reqNomTopographique@{reqNomTopographique}}
+\index{reqNomTopographique@{reqNomTopographique}!bornesQuebec::Borne@{bornesQuebec::Borne}}
+\doxysubsubsection{\texorpdfstring{reqNomTopographique()}{reqNomTopographique()}}
+{\footnotesize\ttfamily const string \& bornes\+Quebec\+::\+Borne\+::req\+Nom\+Topographique (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour la lecture Métrique. 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+lecture\+Metrique la distance mesurée 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Borne_8h}{Borne.\+h}}\item 
+\mbox{\hyperlink{Borne_8cpp}{Borne.\+cpp}}\end{DoxyCompactItemize}

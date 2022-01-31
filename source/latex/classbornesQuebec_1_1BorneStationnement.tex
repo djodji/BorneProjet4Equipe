@@ -1,0 +1,165 @@
+\hypertarget{classbornesQuebec_1_1BorneStationnement}{}\doxysection{bornes\+Quebec\+::Borne\+Stationnement Class Reference}
+\label{classbornesQuebec_1_1BorneStationnement}\index{bornesQuebec::BorneStationnement@{bornesQuebec::BorneStationnement}}
+
+
+classe dérivée de la classe \mbox{\hyperlink{classbornesQuebec_1_1Borne}{Borne}}, elle représente les bornes de stationnement et de payement de la ville de Québec  
+
+
+
+
+{\ttfamily \#include $<$Borne\+Stationnement.\+h$>$}
+
+
+
+Inheritance diagram for bornes\+Quebec\+::Borne\+Stationnement\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classbornesQuebec_1_1BorneStationnement__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for bornes\+Quebec\+::Borne\+Stationnement\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classbornesQuebec_1_1BorneStationnement__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbornesQuebec_1_1BorneStationnement_aade4b3062610a57f3aa9583cc0c3faef}\label{classbornesQuebec_1_1BorneStationnement_aade4b3062610a57f3aa9583cc0c3faef}} 
+{\bfseries Borne\+Stationnement} (int p\+\_\+identifiant, const std\+::string \&p\+\_\+direction, const std\+::string \&p\+\_\+nom\+Topographique, float p\+\_\+longitude, float p\+\_\+latitude, float p\+\_\+lecture\+Metrique, int p\+\_\+segment\+Rue, int p\+\_\+num\+Borne, const std\+::string \&p\+\_\+cote\+Rue)
+\item 
+virtual \mbox{\hyperlink{classbornesQuebec_1_1Borne}{Borne}} $\ast$ \mbox{\hyperlink{classbornesQuebec_1_1BorneStationnement_ab7eca7cd7db49c2ba3f4f6c8345ebdf3}{clone}} () const
+\begin{DoxyCompactList}\small\item\em methode permettant de faire une copie alloué sur le monceau de l\textquotesingle{}objet \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classbornesQuebec_1_1BorneStationnement_a4b24b03e6af5d6361130a2dd043b0f91}\label{classbornesQuebec_1_1BorneStationnement_a4b24b03e6af5d6361130a2dd043b0f91}} 
+const std\+::string \& {\bfseries req\+Type} () const
+\item 
+float \mbox{\hyperlink{classbornesQuebec_1_1BorneStationnement_a1b003f76f021bc033716f55f8c675cbb}{req\+Lecture\+Metrique}} () const
+\begin{DoxyCompactList}\small\item\em methode d\textquotesingle{}acces a la lecture\+Metrique \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classbornesQuebec_1_1BorneStationnement_adb096d1aa91ddf43e4fa41d795d157a1}{req\+Segment\+Rue}} () const
+\begin{DoxyCompactList}\small\item\em methode d\textquotesingle{}acces au segment\+Rue \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classbornesQuebec_1_1BorneStationnement_aae939b3075a4c8845c9346c62d135d1f}{req\+Num\+Borne}} () const
+\begin{DoxyCompactList}\small\item\em methode d\textquotesingle{}acces au num\+Borne \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{classbornesQuebec_1_1BorneStationnement_a5b2ad0d4c7df49fdbc656056a1033594}{req\+Cote\+Rue}} () const
+\begin{DoxyCompactList}\small\item\em methode d\textquotesingle{}acces au cote\+Rue \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classbornesQuebec_1_1BorneStationnement_a86488a7d7be3461deb97067252bfdde3}{req\+Borne\+Formate}} () const
+\begin{DoxyCompactList}\small\item\em methode qui augmente la methode de la classe borne \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+classe dérivée de la classe \mbox{\hyperlink{classbornesQuebec_1_1Borne}{Borne}}, elle représente les bornes de stationnement et de payement de la ville de Québec 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em un} & objet string identifie le type borne de stationnement qui peut être stationnement ou payement \\
+\hline
+\mbox{\texttt{ in}}  & {\em lecture} & Metrique, qui mesure la distance a partir du debut du tronçon. il est plus grand que 0 \\
+\hline
+\mbox{\texttt{ in}}  & {\em l\textquotesingle{}identidiant} & du segement de voie publique (segment\+Rue) \\
+\hline
+\mbox{\texttt{ in}}  & {\em le} & numero de la borne, il est compris entre 1 et 4 \\
+\hline
+\mbox{\texttt{ in}}  & {\em un} & objet string cote\+Rue valide le cote par rapport au centre de chaussée où est la borne. la validité est établie par la fonction util\+::validation\+Point\+Cardinal \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbornesQuebec_1_1BorneStationnement_ab7eca7cd7db49c2ba3f4f6c8345ebdf3}\label{classbornesQuebec_1_1BorneStationnement_ab7eca7cd7db49c2ba3f4f6c8345ebdf3}} 
+\index{bornesQuebec::BorneStationnement@{bornesQuebec::BorneStationnement}!clone@{clone}}
+\index{clone@{clone}!bornesQuebec::BorneStationnement@{bornesQuebec::BorneStationnement}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbornesQuebec_1_1Borne}{Borne}} $\ast$ bornes\+Quebec\+::\+Borne\+Stationnement\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+methode permettant de faire une copie alloué sur le monceau de l\textquotesingle{}objet 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbornesQuebec_1_1Borne}{bornes\+Quebec\+::\+Borne}}.
+
+\mbox{\Hypertarget{classbornesQuebec_1_1BorneStationnement_a86488a7d7be3461deb97067252bfdde3}\label{classbornesQuebec_1_1BorneStationnement_a86488a7d7be3461deb97067252bfdde3}} 
+\index{bornesQuebec::BorneStationnement@{bornesQuebec::BorneStationnement}!reqBorneFormate@{reqBorneFormate}}
+\index{reqBorneFormate@{reqBorneFormate}!bornesQuebec::BorneStationnement@{bornesQuebec::BorneStationnement}}
+\doxysubsubsection{\texorpdfstring{reqBorneFormate()}{reqBorneFormate()}}
+{\footnotesize\ttfamily std\+::string bornes\+Quebec\+::\+Borne\+Stationnement\+::req\+Borne\+Formate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+methode qui augmente la methode de la classe borne 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classbornesQuebec_1_1Borne_ab30cc55b4eaa0dc71ca3c9d23e7493b7}{bornes\+Quebec\+::\+Borne}}.
+
+\mbox{\Hypertarget{classbornesQuebec_1_1BorneStationnement_a5b2ad0d4c7df49fdbc656056a1033594}\label{classbornesQuebec_1_1BorneStationnement_a5b2ad0d4c7df49fdbc656056a1033594}} 
+\index{bornesQuebec::BorneStationnement@{bornesQuebec::BorneStationnement}!reqCoteRue@{reqCoteRue}}
+\index{reqCoteRue@{reqCoteRue}!bornesQuebec::BorneStationnement@{bornesQuebec::BorneStationnement}}
+\doxysubsubsection{\texorpdfstring{reqCoteRue()}{reqCoteRue()}}
+{\footnotesize\ttfamily const std\+::string \& bornes\+Quebec\+::\+Borne\+Stationnement\+::req\+Cote\+Rue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+methode d\textquotesingle{}acces au cote\+Rue 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+cote\+Rue 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbornesQuebec_1_1BorneStationnement_a1b003f76f021bc033716f55f8c675cbb}\label{classbornesQuebec_1_1BorneStationnement_a1b003f76f021bc033716f55f8c675cbb}} 
+\index{bornesQuebec::BorneStationnement@{bornesQuebec::BorneStationnement}!reqLectureMetrique@{reqLectureMetrique}}
+\index{reqLectureMetrique@{reqLectureMetrique}!bornesQuebec::BorneStationnement@{bornesQuebec::BorneStationnement}}
+\doxysubsubsection{\texorpdfstring{reqLectureMetrique()}{reqLectureMetrique()}}
+{\footnotesize\ttfamily float bornes\+Quebec\+::\+Borne\+Stationnement\+::req\+Lecture\+Metrique (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+methode d\textquotesingle{}acces a la lecture\+Metrique 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}attribut lecture\+Metrique 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbornesQuebec_1_1BorneStationnement_aae939b3075a4c8845c9346c62d135d1f}\label{classbornesQuebec_1_1BorneStationnement_aae939b3075a4c8845c9346c62d135d1f}} 
+\index{bornesQuebec::BorneStationnement@{bornesQuebec::BorneStationnement}!reqNumBorne@{reqNumBorne}}
+\index{reqNumBorne@{reqNumBorne}!bornesQuebec::BorneStationnement@{bornesQuebec::BorneStationnement}}
+\doxysubsubsection{\texorpdfstring{reqNumBorne()}{reqNumBorne()}}
+{\footnotesize\ttfamily int bornes\+Quebec\+::\+Borne\+Stationnement\+::req\+Num\+Borne (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+methode d\textquotesingle{}acces au num\+Borne 
+
+\begin{DoxyReturn}{Returns}
+m\+\_\+num\+Borne 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbornesQuebec_1_1BorneStationnement_adb096d1aa91ddf43e4fa41d795d157a1}\label{classbornesQuebec_1_1BorneStationnement_adb096d1aa91ddf43e4fa41d795d157a1}} 
+\index{bornesQuebec::BorneStationnement@{bornesQuebec::BorneStationnement}!reqSegmentRue@{reqSegmentRue}}
+\index{reqSegmentRue@{reqSegmentRue}!bornesQuebec::BorneStationnement@{bornesQuebec::BorneStationnement}}
+\doxysubsubsection{\texorpdfstring{reqSegmentRue()}{reqSegmentRue()}}
+{\footnotesize\ttfamily int bornes\+Quebec\+::\+Borne\+Stationnement\+::req\+Segment\+Rue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+methode d\textquotesingle{}acces au segment\+Rue 
+
+\begin{DoxyReturn}{Returns}
+l\textquotesingle{}attribut segment\+Rue 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{BorneStationnement_8h}{Borne\+Stationnement.\+h}}\item 
+Borne\+Stationnement.\+cpp\end{DoxyCompactItemize}
